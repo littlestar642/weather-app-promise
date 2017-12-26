@@ -26,7 +26,7 @@ const argv=yargs
         {
             var lat=response.data.results[0].geometry.location.lat;
             var lng=response.data.results[0].geometry.location.lng;
-            var webUrl=`https://api.darksky.net/forecast/711272dee9756755122d07a201e41f0d/${lat},${lng}`;
+            var webUrl=`https://api.darksky.net/forecast/<YOUR API KEY>/${lat},${lng}`;
             
             console.log(response.data.results[0].formatted_address);
             return axios.get(webUrl);
